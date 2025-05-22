@@ -32,6 +32,11 @@ const counterReducer = (state = 0, action) => {
 // store
 let store = createStore(counterReducer);
 
+// despatch
+store.dispatch(increment());
+store.dispatch(increment());
+store.dispatch(decrement());
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
